@@ -9,7 +9,8 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5.0-yellowgreen)
 
 ---
-
+<img alt=\"No U-turn Sign\" src=\"https://www.toyotaofclermont.com/static/dealer-26422/Custom_Pages/Road_Signs/no-u-turn-sign.jpg\" height=100>
+    
 ## 📖 Project Overview
 
 This project builds and compares **deep learning models** for classifying traffic signs using the **German Traffic Sign Recognition Benchmark (GTSRB)** dataset. The task is a multi-class classification problem with 43 traffic sign categories.
