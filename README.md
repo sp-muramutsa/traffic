@@ -1,4 +1,4 @@
-# AI Traffic Sign Classification with Deep Neural Networks
+# Traffic Sign Recognition Classification with AI/ Deep Neural Networks
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16.1-orange)
