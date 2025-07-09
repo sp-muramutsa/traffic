@@ -9,7 +9,7 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5.0-yellowgreen)
 
 ---
-<img alt=\"No U-turn Sign\" src=\"https://www.toyotaofclermont.com/static/dealer-26422/Custom_Pages/Road_Signs/no-u-turn-sign.jpg\" height=100>
+[](https://www.toyotaofclermont.com/static/dealer-26422/Custom_Pages/Road_Signs/no-u-turn-sign.jpg)
     
 ## 📖 Project Overview
 
