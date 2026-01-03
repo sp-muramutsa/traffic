@@ -45,19 +45,25 @@ st.write("Upload an image of a traffic sign to classify it.")
 file = st.file_uploader("Upload Image", type=["jpg", "png", "jpeg"])
 
 if file is not None:
-    # Display the user's image
     image = Image.open(file)
+
+    if image.mode != 'RGB':
+        image = image.convert('RGB')
+    
     st.image(image, width=200)
     
-    # 4. PREDICT
+    # Predict
     size = (30, 30) 
     image = ImageOps.fit(image, size, Image.Resampling.LANCZOS)
-    img_array = np.asarray(image)
-    
+    img_array = np.asarray(image)   
     img_reshape = img_array[np.newaxis, ...]
     
-    # Run prediction
-    prediction = model.predict(img_reshape)
-    predicted_index = np.argmax(prediction)
-    
-    st.success(f"Prediction: **{classes[predicted_index]}**")
+    # Predict
+    try:
+        prediction = model.predict(img_reshape)
+        predicted_index = np.argmax(prediction)
+        st.success(f"Prediction: **{classes[predicted_index]}**")
+    except Exception as e:
+        st.error(f"Error predicting: {e}")
+        st.write(f"Model expected shape: {model.input_shape}")
+        st.write(f"Image actual shape: {img_reshape.shape}")
