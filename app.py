@@ -6,7 +6,7 @@ import numpy as np
 # Load and cache the model
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('model.h5')
+    model = tf.keras.models.load_model('traffic_model_2.keras')
     return model
 
 with st.spinner('Loading Model...'):
