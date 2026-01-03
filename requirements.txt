@@ -1,3 +1,7 @@
+numpy
 opencv-python
+pillow
 scikit-learn
+streamlit
 tensorflow
+tensorflow-cpu
